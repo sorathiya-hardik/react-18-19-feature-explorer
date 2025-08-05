@@ -159,21 +159,6 @@ function OverviewTab({ onNavigateToTab }: OverviewTabProps) {
         <div className='absolute inset-0 bg-gradient-to-r from-blue-50 via-purple-50 to-indigo-50 rounded-3xl'></div>
         <div className='relative px-8 py-16 text-center'>
           <div className='mb-8'>
-            <div className='flex items-center justify-center gap-6 mb-8'>
-              <div className='relative group'>
-                <div className='absolute -inset-2 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl blur-lg opacity-25 group-hover:opacity-40 transition-opacity'></div>
-                <div className='relative w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-xl border border-blue-100'>
-                  <span className='text-3xl filter drop-shadow-sm'>⚛️</span>
-                </div>
-              </div>
-              <div className='relative group'>
-                <div className='absolute -inset-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl blur-lg opacity-25 group-hover:opacity-40 transition-opacity'></div>
-                <div className='relative w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-xl border border-purple-100'>
-                  <span className='text-3xl filter drop-shadow-sm'>🚀</span>
-                </div>
-              </div>
-            </div>
-
             <h1 className='text-5xl md:text-6xl lg:text-7xl font-black mb-6'>
               <span className='bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 bg-clip-text text-transparent'>
                 React 18 & 19
