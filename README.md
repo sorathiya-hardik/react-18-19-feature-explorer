@@ -4,7 +4,7 @@ A modern, production-ready React 19 boilerplate with TypeScript, Tailwind CSS, E
 
 ## 🌐 Live Demo
 
-Experience the React 19 features in action:
+Experience the React 18 & 19 features in action:
 
 <div align="center">
 
