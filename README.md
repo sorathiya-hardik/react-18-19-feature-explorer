@@ -2,6 +2,16 @@
 
 A modern, production-ready React 19 boilerplate with TypeScript, Tailwind CSS, ESLint, and Prettier.
 
+## 🌐 Live Demo
+
+Experience the React 19 features in action:
+
+<div align="center">
+
+[![Deploy with Vercel](https://vercel.com/button)](https://react-18-19-feature-explorer.vercel.app)
+
+</div>
+
 ## 🚀 Features
 
 - ⚛️ **React 19** - Latest React with new features and improvements
