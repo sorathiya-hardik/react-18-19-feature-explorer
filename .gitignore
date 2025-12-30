@@ -93,3 +93,14 @@ Thumbs.db
 
 # Vite
 .vite
+
+# PWA - Dev/Build artifacts
+dev-dist/
+dist/sw.js*
+dist/registerSW.js
+dist/workbox-*
+dist/manifest.json
+*.webmanifest
+
+# Service Worker cache (runtime generated)
+.sw-cache/
