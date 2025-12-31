@@ -1,6 +1,6 @@
 import { useState, Suspense } from 'react'
-import reactLogo from './assets/react.svg'
 import { ErrorBoundary } from './components/ErrorBoundary'
+import { Navbar } from './components/Navbar'
 import { ConcurrentFeatures } from './components/ConcurrentFeatures'
 import { SuspenseDemo } from './components/SuspenseDemo'
 import { TransitionDemo } from './components/TransitionDemo'
@@ -44,55 +44,7 @@ export default function App() {
 
   return (
     <div className='min-h-screen bg-gradient-to-br from-blue-50/30 via-white to-purple-50/30'>
-      <header className='bg-white/90 backdrop-blur-2xl border-b border-gray-200/60 sticky top-0 z-50 shadow-sm'>
-        <div className='container mx-auto px-4 sm:px-6 py-4'>
-          <div className='flex items-center justify-between gap-4'>
-            {/* Logo/Title */}
-            <div className='flex items-center gap-3 flex-shrink-0'>
-              <div className='relative'>
-                <div className='absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl blur opacity-20'></div>
-                <button
-                  onClick={() => setActiveTab('overview')}
-                  className='relative flex items-center gap-2 bg-white rounded-2xl px-3 py-2 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group'
-                >
-                  <img
-                    src={reactLogo}
-                    className='h-5 w-5 animate-spin group-hover:scale-110 transition-transform'
-                    style={{ animationDuration: '20s' }}
-                    alt='React logo'
-                  />
-                  <span className='text-sm font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hidden sm:inline'>
-                    React 18 & 19
-                  </span>
-                </button>
-              </div>
-            </div>
-
-            {/* Tab Navigation */}
-            <nav className='flex-2 flex items-center justify-center'>
-              <div className='flex items-center bg-gray-50/80'>
-                {tabsData.map(tab => (
-                  <button
-                    key={tab.id}
-                    onClick={() => setActiveTab(tab.id)}
-                    className={`relative px-2.5 py-2 mx-1 rounded-lg font-medium text-sm transition-all duration-300 whitespace-nowrap ${
-                      activeTab === tab.id
-                        ? 'bg-white text-blue-600 shadow-md shadow-blue-500/10'
-                        : 'text-gray-600 hover:text-gray-900 hover:bg-white/50'
-                    }`}
-                    title={tab.label}
-                  >
-                    <span className='relative z-10'>{tab.label}</span>
-                    {activeTab === tab.id && (
-                      <div className='absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-lg'></div>
-                    )}
-                  </button>
-                ))}
-              </div>
-            </nav>
-          </div>
-        </div>
-      </header>
+      <Navbar activeTab={activeTab} onTabChange={setActiveTab} />
 
       <main className='container mx-auto px-4 sm:px-6 py-12'>
         <ErrorBoundary>
@@ -224,7 +176,6 @@ interface FeatureCardProps {
   title: string
   description: string
   version?: string
-  tabId?: string
   onClick?: () => void
 }
 

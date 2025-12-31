@@ -5,7 +5,6 @@ export interface TabData {
 }
 
 export const tabsData: TabData[] = [
-  { id: 'overview', label: '🏠', shortLabel: 'Home' },
   { id: 'concurrent', label: 'Concurrent Rendering', shortLabel: 'Concurrent' },
   { id: 'suspense', label: 'Enhanced Suspense', shortLabel: 'Suspense' },
   { id: 'transitions', label: 'Transitions', shortLabel: 'Transitions' },
