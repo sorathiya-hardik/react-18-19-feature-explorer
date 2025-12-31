@@ -8,7 +8,7 @@ Experience the React 18 & 19 features in action:
 
 <div align="center">
 
-[![Deploy with Vercel](https://vercel.com/button)](https://react-18-19-feature-explorer.vercel.app)
+[![Deploy with Vercel](https://vercel.com/button)](https://react-18-19-feature-explorer-azure.vercel.app/)
 
 </div>
 
